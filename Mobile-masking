@@ -1,0 +1,16 @@
+def mask_mobile_number():
+  mobile_number = input("Enter your mobile number: ")
+
+  print("Entered Mobile Number:", mobile_number)
+
+  first_part = mobile_number[:5]
+  masked_part = "*" * 5
+
+  masked_number = first_part + masked_part
+
+  return masked_number
+
+
+result = mask_mobile_number()
+
+print("Masked Mobile Number:", result)
